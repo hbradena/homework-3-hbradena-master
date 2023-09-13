@@ -1,0 +1,26 @@
+Prove that the statements:
+
+    p ∧ q → r
+
+and
+
+    (p → r) ∧ (q → r)
+
+are NOT logically equivalent.
+
+Afterward, explain why you have shown that the two statements are not equivalent.
+What would you expect to happen differently if both statements were equivalent?
+
+p: T
+q: F
+r: F
+
+When this truth assignment is used, the left half of the first statement becomes false which
+    makes the whole statement TRUE when r is false. On the second statement, the left half
+    becomes false and the right half is true. This makes the whole second statement FALSE.
+    Because there is a truth assignment that produces different answers from both statements,
+    the statements are NOT logically equivalent.
+
+If both statements were equivalent, then there could not be a truth assignment that makes the
+    statements produce a different answer. In other words, every truth assignment would
+    produce the same answer from both statement if the statements were equivalent.

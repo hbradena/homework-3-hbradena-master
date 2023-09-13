@@ -1,0 +1,25 @@
+//Complete the following natural deduction proof.
+//When you are finished, your file should say "Logika verified".
+
+(p ∧ q) ∨ (q ∧ r) ⊢  q ∧ (r ∨ p)
+
+{
+    1. (p ∧ q) ∨ (q ∧ r)            premise
+    2. {
+        3. q ∧ r                    assume
+        4. q                        ∧e1 3
+        5. r                        ∧e2 3
+        6. r ∨ p                    ∨i1 5
+        7. q ∧ (r ∨ p)              ∧i 4 6
+        //q ∧ (r ∨ p)
+    }
+    8. {
+        9. p ∧ q                    assume
+        10. p                       ∧e1 9
+        11. q                       ∧e2 9
+        12. r ∨ p                   ∨i2 10
+        13. q ∧ (r ∨ p)             ∧i 11 12
+        //q ∧ (r ∨ p)
+    }
+    14. q ∧ (r ∨ p)                 ∨e 1 8 2
+}
